@@ -24,7 +24,7 @@ Method work the same day (owner's question "can you have an inner event storming
 
 ## Published (2026-09-25)
 
-First commit and public repository: https://github.com/Zaftri/borgata (branch `master`). Live build on GitHub Pages from the `gh-pages` branch: https://zaftri.github.io/borgata/ (built with `VITE_BASE=/borgata/`). The Pages workflow in `.github/workflows/pages.yml` is written but not committed: the GitHub token lacks the `workflow` scope; once the owner runs `gh auth refresh -h github.com -s workflow`, commit the workflow and switch Pages to build from it. Until then, publish by rebuilding and force-pushing `dist` to `gh-pages` (the steps are in the session notes above).
+First commit and public repository: https://github.com/Zaftri/borgata (branch `master`). Live build on GitHub Pages from the `gh-pages` branch: https://zaftri.github.io/borgata/ (built with `VITE_BASE=/borgata/`). The Pages workflow (`.github/workflows/pages.yml`) is committed and Pages builds from it on every push to `master` (typecheck, tests, build, deploy); the `gh-pages` branch was the first manual publish and can be deleted once a workflow deploy has succeeded.
 
 ## Playtest notes (phase 7)
 
