@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "0.4.0",
+  "entries": [
+    {
+      "seed": "golden-palermo-1",
+      "setup": {
+        "archetype": null,
+        "background": "outsider",
+        "difficulty": "normal",
+        "ironman": false
+      },
+      "strategy": "quiet",
+      "turns": 104,
+      "hash": "43fbd8ebc0940edd"
+    },
+    {
+      "seed": "golden-palermo-2",
+      "setup": {
+        "archetype": null,
+        "background": "outsider",
+        "difficulty": "normal",
+        "ironman": false
+      },
+      "strategy": "loud",
+      "turns": 104,
+      "hash": "854089593656cd3d"
+    },
+    {
+      "seed": "golden-trapani-1",
+      "setup": {
+        "archetype": null,
+        "background": "outsider",
+        "difficulty": "normal",
+        "ironman": false
+      },
+      "strategy": "mixed",
+      "turns": 104,
+      "hash": "7170a15bdd059a86"
+    },
+    {
+      "seed": "golden-island-1",
+      "setup": {
+        "archetype": null,
+        "background": "outsider",
+        "difficulty": "normal",
+        "ironman": false
+      },
+      "strategy": "quiet",
+      "turns": 52,
+      "hash": "a7c9664ae7bdf532"
+    }
+  ]
+}

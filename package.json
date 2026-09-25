@@ -1,0 +1,29 @@
+{
+  "name": "borgata",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Cosa Nostra strategy game: headless simulation core, content, harness and browser UI",
+  "type": "module",
+  "packageManager": "pnpm@11.3.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p packages/ui/tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "harness": "tsx packages/harness/src/cli.ts",
+    "check": "pnpm typecheck && pnpm lint && pnpm test && pnpm harness quick",
+    "dev": "vite --config packages/ui/vite.config.ts",
+    "build": "vite build --config packages/ui/vite.config.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "eslint": "^9.30.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0",
+    "typescript-eslint": "^8.35.0",
+    "vitest": "^3.2.0"
+  }
+}

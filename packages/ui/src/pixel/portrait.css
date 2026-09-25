@@ -1,0 +1,33 @@
+/* Portraits (design 07 §5, design 11 wave A2): the composed face is a small pixel-art image and must stay
+   crisp at any CSS size, never browser-smoothed. Owned by packages/ui/src/pixel/Portrait.tsx only. */
+
+.portrait {
+  display: block;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  border-radius: 2px;
+  background: var(--panel, #ffffff);
+  flex-shrink: 0;
+}
+
+.portrait-cell {
+  width: 32px;
+  height: 32px;
+}
+
+.portrait-inline {
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+/* The situation card's counterpart portrait (Planning.tsx's SituationCard), beside the prompt. */
+.situation-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6em;
+}
+
+.situation-heading .situation-prompt {
+  margin: 0;
+}

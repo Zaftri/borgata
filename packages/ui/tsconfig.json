@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": [],
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    "baseUrl": "../..",
+    "paths": {
+      "@borgata/shared": ["packages/shared/src/index.ts"],
+      "@borgata/sim": ["packages/sim/src/index.ts"],
+      "@borgata/content": ["packages/content/src/index.ts"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "vite.config.ts"]
+}
