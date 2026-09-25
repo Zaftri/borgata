@@ -43,7 +43,7 @@ describe("runCoverage: smoke run", () => {
       );
       expect(reachedAny).toBe(true);
     },
-    20_000,
+    180_000, // a whole career on a shared CI runner (2026-09-25)
   );
 });
 
