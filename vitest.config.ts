@@ -15,5 +15,9 @@ export default defineConfig({
   test: {
     include: ["packages/*/src/**/*.test.ts"],
     environment: "node",
+    // Story and smoke tests run whole careers; a shared CI runner is several times slower than a laptop, and the
+    // first Pages run timed out at the 5 s default (2026-09-25).
+    testTimeout: 180_000,
+    hookTimeout: 60_000,
   },
 });
