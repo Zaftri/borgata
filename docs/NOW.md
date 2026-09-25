@@ -22,6 +22,10 @@ Known gaps for the next pass: the newspaper has no photo yet (the slot is wired)
 
 Method work the same day (owner's question "can you have an inner event storming"): `docs/event-storming-2026-09-25.md`, a three-role walk of the timeline (player, domain expert, engineer) with gaps and five hotspots. Landed from it and from beat coverage: report lines for the three plain orders (set share, claim, release); ceremony and band-change beats; a validation rule that every outcome following a player choice, and every option, has an answering report line (it found "say nothing" at a patrol stop showing nothing, the feast card with no outcomes at all, and catch-all outcomes that let a choice draw a random result); the proposal scene on an eight-week cooldown (with a bones rule it returned every week); the starter fixture runs the card game like generated worlds; a "one week, seen" story test; beat coverage in `harness coverage`. Open decisions from the storming, for the owner: a business-to-owner relation so shopkeepers become people; routing the first intimidation and the first dispute to the player when they are the party; the kid becoming the player's first associate by name.
 
+## Published (2026-09-25)
+
+First commit and public repository: https://github.com/Zaftri/borgata (branch `master`). Live build on GitHub Pages from the `gh-pages` branch: https://zaftri.github.io/borgata/ (built with `VITE_BASE=/borgata/`). The Pages workflow in `.github/workflows/pages.yml` is written but not committed: the GitHub token lacks the `workflow` scope; once the owner runs `gh auth refresh -h github.com -s workflow`, commit the workflow and switch Pages to build from it. Until then, publish by rebuilding and force-pushing `dist` to `gh-pages` (the steps are in the session notes above).
+
 ## Playtest notes (phase 7)
 
 - (owner) The Turno tab and the newspaper, ten minutes: pending. Questions: does the week read as a place; are the beats legible; do the faces feel like people.
